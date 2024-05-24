@@ -10,22 +10,21 @@ public class Main {
         }
 
         System.out.println("Задание №2");
-        int clientDeviceYear = 2015;
+        int clientDeviceYear = 2013;
+        int year1 = 2015;
+        int clientOS2 = 0;
 
-        if (clientOS == 0) {
-            if (clientDeviceYear < 2015) {
+
+        if (clientOS2 == 0 && clientDeviceYear < year1) {
                 System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-            } else {
+            } else if (clientOS2 == 0 && clientDeviceYear >= year1){
                 System.out.println("Установите версию приложения для iOS по ссылке");
             }
-        }
-        if (clientOS == 1) {
-            if (clientDeviceYear < 2015) {
+        if (clientOS2 == 1 && clientDeviceYear < year1) {
                 System.out.println("Установите облегченную версию приложения для Android по ссылке");
-            } else {
+            } else if (clientOS2 == 1 && clientDeviceYear >= year1){
                 System.out.println("Установите версию приложения для Android по ссылке");
             }
-        }
 
         System.out.println("Задание №3");
         int year = 2021;
@@ -58,7 +57,7 @@ public class Main {
         }
 
         System.out.println("Задание №5");
-        char monthNumber = 12;
+        int monthNumber = 12;
 
         switch (monthNumber) {
             case 12:
